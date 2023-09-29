@@ -139,20 +139,20 @@ programa {
         escreva("\n[ 0 ] Sair do programa ou qualquer outro número para sair da tela de seleção de produtos\n")
         escreva("\nDigite o número referente ao produto:\n")
         leia(produto_selecionado)
-        se(produto_selecionado>0 e produto_selecionado<=(u.numero_elementos(produtos))){
+        se(produto_selecionado> 0 e produto_selecionado<(u.numero_elementos(produtos))){
           escreva("\nDigite a quantidade desejada por este produto:\n")
           inteiro produto_quantidade 
           leia(produto_quantidade)
-          se(produto_quantidade>0){
+         se(produto_quantidade>0){
             quantidade[produto_selecionado-1]+=produto_quantidade
           }
         }  
         senao{
-          repete = verdadeiro
+          repete = falso
         }
         limpa()
     }enquanto(repete == verdadeiro)
-    		
+  
 	    se(produto_selecionado!=0){
 	      contabiliza(valores)
 	      pagamento(valorTotal)
@@ -304,7 +304,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1798; 
+ * @POSICAO-CURSOR = 4998; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
